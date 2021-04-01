@@ -34,7 +34,7 @@ document.querySelector("#faster").addEventListener("click", function(){
 
 document.querySelector("#skip").addEventListener("click", function(){
 	console.log("skip ahead");
-	video.curentTime(video.currentTime()+10);
+	video.curentTime(video.currentTime()+15);
 	console.log(video.currentTime)
 })
 
@@ -62,7 +62,8 @@ document.querySelector("#mute").addEventListener("click",function(){
 		video.muted = false;
 	}
 	else{
-		video.muted = true
+		video.muted = true;
+		document.getElementById("#mute").innerHTML = "Unmute";
 	}
 
 });
